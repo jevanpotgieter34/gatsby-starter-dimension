@@ -75,6 +75,7 @@ class SecondPage extends React.Component {
               <div className="field half first">
                 <label htmlFor="UnitsMeasured">Units Measured In</label>
                 <select name="UnitsMeasured" id="UnitsMeasured" required value={UnitsMeasured} onChange={this.handleChange}>
+                <option>...</option>
                   <option>Metrics</option>
                   <option>Imperial</option>
                 </select>
@@ -82,6 +83,7 @@ class SecondPage extends React.Component {
               <div className="field half">
                 <label htmlFor="goal">Your Goal</label>
                 <select name="goal" id="goal" required value={goal} onChange={this.handleChange}> 
+                <option>...</option>
                   <option>Weight loss - out with the old in with the new</option>
                   <option>Maintain weight - change to a healthier lifestyle</option>
                   <option>Gain weight - add some muscle </option>
@@ -122,6 +124,7 @@ class SecondPage extends React.Component {
               <div className="field">
                 <label htmlFor="ActivityLevel">Activity Factor</label>
                 <select name="ActivityLevel" id="ActivityLevel" required value={ActivityLevel} onChange={this.handleChange}>
+                <option>...</option>
                   <option>Sedentary - No formal sports activity or training</option>
                   <option>Light - Light fitness training, such as walking</option>
                   <option>Moderate - Fitness training 3 times/week or sports activity</option>
