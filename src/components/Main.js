@@ -49,7 +49,13 @@ class Main extends React.Component {
               <input type="email" name="email" id="email" required/>
             </div>
             <h2>Your Body Detail</h2>
-
+            <div className="field">
+            <label htmlFor="UnitsMeasured">Units Measured In</label>
+                    <select name="UnitsMeasured" id="UnitsMeasured">
+                      <option>Metrics</option>
+                      <option>Imperial</option>
+                    </select>
+               </div>
             <div>
               <Tabs>
                 <div label="Male">
@@ -81,11 +87,11 @@ class Main extends React.Component {
                   </div>
                   <div className="field half first">
                     <label htmlFor="FemaleBFactor1">Abdomen</label>
-                    <input type="text" name="FemaleBFactor1" id="FemaleBFactor1" placeholder="Measure in cm at the belly button" />
+                    <input type="text" name="FemaleBFactor1" id="FemaleBFactor1" placeholder="Measure at the belly button" />
                   </div>
                   <div className="field half">
                     <label htmlFor="FemaleBFactor2">Hips</label>
-                    <input type="text" name="FemaleBFactor2" id="FemaleBFactor2" placeholder="Measure at widest point in cm" />
+                    <input type="text" name="FemaleBFactor2" id="FemaleBFactor2" placeholder="Measure at widest point" />
                   </div>
                 </div>
               </Tabs>
@@ -101,13 +107,7 @@ class Main extends React.Component {
                       <option>Elite Athlete - Heavy daily weights and intense sports training</option>
                     </select>
                </div>
-               <div className="field">
-            <label htmlFor="UnitsMeasured">Units Measured In</label>
-                    <select name="UnitsMeasured" id="UnitsMeasured">
-                      <option>Metrics</option>
-                      <option>Imperial</option>
-                    </select>
-               </div>
+              
             <div className="field">
               <label htmlFor="message">Message</label>
               <textarea name="message" id="message" rows="4"></textarea>
