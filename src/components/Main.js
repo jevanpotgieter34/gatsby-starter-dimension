@@ -60,38 +60,38 @@ class Main extends React.Component {
               <Tabs>
                 <div label="Male">
                   <div className="field half first">
-                    <label htmlFor="WeightMale">Weight</label>
-                    <input type="text" name="WeightMale" id="WeightMale" placeholder="Enter weight" />
+                    <label htmlFor="Weight">Weight</label>
+                    <input type="text" name="Weight" id="Weight" placeholder="Enter weight" />
                   </div>
                   <div className="field half">
-                    <label htmlFor="HeightMale">Height</label>
-                    <input type="text" name="HeightMale" id="HeightMale" placeholder="Enter height, remove shoes" />
+                    <label htmlFor="Height">Height</label>
+                    <input type="text" name="Height" id="Height" placeholder="Enter height, remove shoes" />
                   </div>
                   <div className="field half first">
-                    <label htmlFor="MaleBFactor1">Waist</label>
-                    <input type="text" name="MaleBFactor1" id="MaleBFactor1" placeholder="Measure at the belly button" />
+                    <label htmlFor="MeasureFactor1">Waist</label>
+                    <input type="text" name="MeasureFactor1" id="MeasureFactor1" placeholder="Measure at the belly button" />
                   </div>
                   <div className="field half">
-                    <label htmlFor="MaleBFactor2">Wrist</label>
-                    <input type="text" name="MaleBFactor2" id="MaleBFactor2" placeholder="Measure your dominant hand"/>
+                    <label htmlFor="MeasureFactor2">Wrist</label>
+                    <input type="text" name="MeasureFactor2" id="MeasureFactor2" placeholder="Measure your dominant hand"/>
                   </div>
                 </div>
                 <div label="Female">
                   <div className="field half first">
-                    <label htmlFor="WeightFemale">Weight</label>
-                    <input type="text" name="WeightFemale" id="WeightFemale" placeholder="Enter weight" />
+                    <label htmlFor="Weight">Weight</label>
+                    <input type="text" name="Weight" id="Weight" placeholder="Enter weight" />
                   </div>
                   <div className="field half">
-                    <label htmlFor="HeightFemale">Height</label>
-                    <input type="text" name="HeightFemale" id="HeightFemale" placeholder="Enter height, remove shoes" />
+                    <label htmlFor="Height">Height</label>
+                    <input type="text" name="Height" id="Height" placeholder="Enter height, remove shoes" />
                   </div>
                   <div className="field half first">
-                    <label htmlFor="FemaleBFactor1">Abdomen</label>
-                    <input type="text" name="FemaleBFactor1" id="FemaleBFactor1" placeholder="Measure at the belly button" />
+                    <label htmlFor="MeasureFactor1">Abdomen</label>
+                    <input type="text" name="MeasureFactor1" id="MeasureFactor1" placeholder="Measure at the belly button" />
                   </div>
                   <div className="field half">
-                    <label htmlFor="FemaleBFactor2">Hips</label>
-                    <input type="text" name="FemaleBFactor2" id="FemaleBFactor2" placeholder="Measure at widest point" />
+                    <label htmlFor="MeasureFactor2">Hips</label>
+                    <input type="text" name="MeasureFactor2" id="MeasureFactor2" placeholder="Measure at widest point" />
                   </div>
                 </div>
               </Tabs>
