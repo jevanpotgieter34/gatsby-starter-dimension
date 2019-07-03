@@ -48,66 +48,6 @@ class Main extends React.Component {
               <label htmlFor="email">Email</label>
               <input type="email" name="email" id="email" required/>
             </div>
-            <h2>Your Body Detail</h2>
-            <div className="field">
-            <label htmlFor="UnitsMeasured">Units Measured In</label>
-                    <select name="UnitsMeasured" id="UnitsMeasured">
-                      <option>Metrics</option>
-                      <option>Imperial</option>
-                    </select>
-               </div>
-            <div>
-              <Tabs>
-                <div label="Male">
-                  <div className="field half first">
-                    <label htmlFor="Weight">Weight</label>
-                    <input type="text" name="Weight" id="Weight" placeholder="Enter weight" />
-                  </div>
-                  <div className="field half">
-                    <label htmlFor="Height">Height</label>
-                    <input type="text" name="Height" id="Height" placeholder="Enter height, remove shoes" />
-                  </div>
-                  <div className="field half first">
-                    <label htmlFor="MeasureFactor1">Waist</label>
-                    <input type="text" name="MeasureFactor1" id="MeasureFactor1" placeholder="Measure at the belly button" />
-                  </div>
-                  <div className="field half">
-                    <label htmlFor="MeasureFactor2">Wrist</label>
-                    <input type="text" name="MeasureFactor2" id="MeasureFactor2" placeholder="Measure your dominant hand"/>
-                  </div>
-                </div>
-                <div label="Female">
-                  <div className="field half first">
-                    <label htmlFor="Weight">Weight</label>
-                    <input type="text" name="Weight" id="Weight" placeholder="Enter weight" />
-                  </div>
-                  <div className="field half">
-                    <label htmlFor="Height">Height</label>
-                    <input type="text" name="Height" id="Height" placeholder="Enter height, remove shoes" />
-                  </div>
-                  <div className="field half first">
-                    <label htmlFor="MeasureFactor1">Abdomen</label>
-                    <input type="text" name="MeasureFactor1" id="MeasureFactor1" placeholder="Measure at the belly button" />
-                  </div>
-                  <div className="field half">
-                    <label htmlFor="MeasureFactor2">Hips</label>
-                    <input type="text" name="MeasureFactor2" id="MeasureFactor2" placeholder="Measure at widest point" />
-                  </div>
-                </div>
-              </Tabs>
-            </div>
-            <div className="field">
-            <label htmlFor="ActivityFactor">Activity Factor</label>
-                    <select name="ActivityFactor" id="ActivityFactor">
-                      <option>Sedentary - No formal sports activity or training</option>
-                      <option>Light - Light fitness training, such as walking</option>
-                      <option>Moderate - Fitness training 3 times/week or sports activity</option>
-                      <option>Active - Daily aerobic training or moderate weight training</option>
-                      <option>Very Active - Heavy daily weights</option>
-                      <option>Elite Athlete - Heavy daily weights and intense sports training</option>
-                    </select>
-               </div>
-              
             <div className="field">
               <label htmlFor="message">Message</label>
               <textarea name="message" id="message" rows="4"></textarea>
