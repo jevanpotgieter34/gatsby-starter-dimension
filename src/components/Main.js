@@ -49,34 +49,35 @@ class Main extends React.Component {
               <input type="email" name="email" id="email" required/>
             </div>
             <h2>Your Body Detail</h2>
+
             <div>
               <Tabs>
                 <div label="Male">
                   <div className="field half first">
                     <label htmlFor="WeightMale">Weight</label>
-                    <input type="text" name="WeightMale" id="WeightMale" placeholder="Enter weight in kg" />
+                    <input type="text" name="WeightMale" id="WeightMale" placeholder="Enter weight" />
                   </div>
                   <div className="field half">
                     <label htmlFor="HeightMale">Height</label>
-                    <input type="text" name="HeightMale" id="HeightMale" placeholder="Enter height in kg" />
+                    <input type="text" name="HeightMale" id="HeightMale" placeholder="Enter height, remove shoes" />
                   </div>
                   <div className="field half first">
                     <label htmlFor="MaleBFactor1">Waist</label>
-                    <input type="text" name="MaleBFactor1" id="MaleBFactor1" placeholder="Measure in cm at the belly button" />
+                    <input type="text" name="MaleBFactor1" id="MaleBFactor1" placeholder="Measure at the belly button" />
                   </div>
                   <div className="field half">
                     <label htmlFor="MaleBFactor2">Wrist</label>
-                    <input type="text" name="MaleBFactor2" id="MaleBFactor2" placeholder="Measure your dominant hand in cm"/>
+                    <input type="text" name="MaleBFactor2" id="MaleBFactor2" placeholder="Measure your dominant hand"/>
                   </div>
                 </div>
                 <div label="Female">
                   <div className="field half first">
                     <label htmlFor="WeightFemale">Weight</label>
-                    <input type="text" name="WeightFemale" id="WeightFemale" placeholder="Enter weight in kg" />
+                    <input type="text" name="WeightFemale" id="WeightFemale" placeholder="Enter weight" />
                   </div>
                   <div className="field half">
                     <label htmlFor="HeightFemale">Height</label>
-                    <input type="text" name="HeightFemale" id="HeightFemale" placeholder="Enter height in kg" />
+                    <input type="text" name="HeightFemale" id="HeightFemale" placeholder="Enter height, remove shoes" />
                   </div>
                   <div className="field half first">
                     <label htmlFor="FemaleBFactor1">Abdomen</label>
@@ -98,6 +99,13 @@ class Main extends React.Component {
                       <option>Active - Daily aerobic training or moderate weight training</option>
                       <option>Very Active - Heavy daily weights</option>
                       <option>Elite Athlete - Heavy daily weights and intense sports training</option>
+                    </select>
+               </div>
+               <div className="field">
+            <label htmlFor="UnitsMeasured">Units Measured In</label>
+                    <select name="UnitsMeasured" id="UnitsMeasured">
+                      <option>Metrics</option>
+                      <option>Imperial</option>
                     </select>
                </div>
             <div className="field">
