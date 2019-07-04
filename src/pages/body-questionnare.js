@@ -1,8 +1,5 @@
 import React from 'react'
-import { Link } from 'gatsby'
 import Tabs from '../components/Tabs'
-import Tab from '../components/Tab'
-import Footer from '../components/Footer'
 import Layout from '../components/layout'
 
 const encode = (data) => {
