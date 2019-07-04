@@ -1,7 +1,5 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Tabs from './Tabs'
-import Tab from './Tab'
 import { Link } from 'gatsby'
 import pic01 from '../images/pic01.jpg'
 import pic02 from '../images/pic02.jpg'
@@ -18,8 +16,8 @@ class Main extends React.Component {
         <article id="intro" className={`${this.props.article === 'intro' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{ display: 'none' }}>
           <h2 className="major">Intro</h2>
           <span className="image main"><img src={pic01} alt="" /></span>
-          <p>Fill in the body questionnare below and we will get in contact with a plan that suits you best</p>
-           <Link to="/body-questionnare">Body Questionnare</Link>
+          <p>Fill in the body questionnaire below and we will get in contact with a plan that suits you best</p>
+           <Link to="/body-questionnare">Body Questionnaire</Link>
           {close}
         </article>
 
