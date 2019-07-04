@@ -45,7 +45,7 @@ class SecondPage extends React.Component {
       <Layout >
         <div >
           {/* Here we add a helper form for netlify to get all the fields */}
-          <form name="frmBodyFatCalculator" data-netlify="true" data-netlify-honeypot="bot-field" hidden >
+          <form name="frmBodyFatCalculator" data-netlify="true" data-netlify-honeypot="bot-field" hidden data-netlify-recaptcha="true" >
             <input type="text" name="name" />
             <input type="email" name="email" />
             <select name="UnitsMeasured" />
@@ -58,12 +58,13 @@ class SecondPage extends React.Component {
             <input name="Hips" />
             <input name="ActivityLevel" />
             <textarea name="message"></textarea>
+            <div data-netlify-recaptcha="true"></div>
           </form>
           <div id="wrapper">
             <div id="body">
             </div>
             <h2 className="major">Your details</h2>
-            <form onSubmit={this.handleSubmit}>
+            <form onSubmit={this.handleSubmit}  data-netlify-recaptcha="true" data-netlify="true">>
               <div className="field half first">
                 <label htmlFor="name">Name</label>
                 <input type="text" name="name" id="name" required value={name} onChange={this.handleChange} placeholder="Name" />
@@ -138,6 +139,7 @@ class SecondPage extends React.Component {
                 <label htmlFor="message">Anything else you want us to know</label>
                 <textarea name="message" id="message" rows="4" placeholder="Add your allergies, food dislikes and favourite foods here" value={message} onChange={this.handleChange} ></textarea>
               </div>
+              <div data-netlify-recaptcha="true"></div>
               <ul className="actions">
                 <li><input type="submit" value="Send Message" className="special" /></li>
                 <li><input type="reset" value="Reset" onClick={this.HandleReset}/></li>

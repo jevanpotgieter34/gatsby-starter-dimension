@@ -39,7 +39,7 @@ class Main extends React.Component {
 
         <article id="contact" className={`${this.props.article === 'contact' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{ display: 'none' }}>
           <h2 className="major">Contact</h2>
-          <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+          <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field"  data-netlify-recaptcha="true">
             <input type="hidden" name="form-name" value="contact" />
             <div className="field half first">
               <label htmlFor="name">Fullname</label>
@@ -53,6 +53,7 @@ class Main extends React.Component {
               <label htmlFor="message">Message</label>
               <textarea name="message" id="message" rows="4"></textarea>
             </div>
+            <div data-netlify-recaptcha="true"></div>
             <ul className="actions">
               <li><input type="submit" value="Send Message" className="special" /></li>
               <li><input type="reset" value="Reset" /></li>
