@@ -17,7 +17,7 @@ class Main extends React.Component {
   constructor(props) {
     super(props);
 
-    this.state = {Blocks:"",DailyProtein:"" ,name: "", email: "", UnitsMeasured: "", goal: "", Weight: "", Height: "", Waist: "", Wrist: "", Forearm: "", Hips: "", ActivityLevel: "", message: "", LeanBodyMass: "", BodyFatWeight: "", BodyFatPerc: "" };
+    this.state = { Blocks: "", DailyProtein: "", name: "", email: "", UnitsMeasured: "", goal: "", Weight: "", Height: "", Waist: "", Wrist: "", Forearm: "", Hips: "", ActivityLevel: "", message: "", LeanBodyMass: "", BodyFatWeight: "", BodyFatPerc: "" };
   }
   UnitConverter() {
     if (this.UnitsMeasured == "Metric") {
@@ -40,11 +40,11 @@ class Main extends React.Component {
     else {
       this.state.LeanBodyMass = Math.round((this.state.Weight * 0.732) + 8.987 + this.state.Wrist / 3.140 - this.state.Waist * 0.157 - this.state.Hips * 0.249 + this.state.Forearm * 0.434)
     }
-   this.state.BodyFatWeight = Math.round(this.state.Weight - this.state.LeanBodyMass)
-   this.state.BodyFatPerc = Math.round((this.state.BodyFatWeight / this.state.Weight) * 100)
-   this.state.DailyProtein = Math.round(this.state.LeanBodyMass * this.state.ActivityLevel)
-   this.state.Blocks = Math.round(this.state.DailyProtein/7)
-
+    this.state.BodyFatWeight = Math.round(this.state.Weight - this.state.LeanBodyMass)
+    this.state.BodyFatPerc = Math.round((this.state.BodyFatWeight / this.state.Weight) * 100)
+    this.state.DailyProtein = Math.round(this.state.LeanBodyMass * this.state.ActivityLevel)
+    this.state.Blocks = Math.round(this.state.DailyProtein / 7)
+    this.handleChange
   }
   handleSubmit = e => {
     this.UnitConverter()
@@ -59,9 +59,9 @@ class Main extends React.Component {
   };
 
   HandleReset = () => {
-    this.setState({
-      name: "", email: "", UnitsMeasured: "", goal: "", Weight: "", Height: "", Waist: "", Wrist: "", Forearm: "", Hips: "", ActivityLevel: "", message: ""
-    })
+    this.setState(
+      { Blocks: "", DailyProtein: "", name: "", email: "", UnitsMeasured: "", goal: "", Weight: "", Height: "", Waist: "", Wrist: "", Forearm: "", Hips: "", ActivityLevel: "", message: "", LeanBodyMass: "", BodyFatWeight: "", BodyFatPerc: "" }
+    )
   };
 
   handleChange = e => this.setState({ [e.target.name]: e.target.value });
@@ -97,6 +97,10 @@ class Main extends React.Component {
             <input name="Forearm" />
             <input name="Hips" />
             <input name="ActivityLevel" />
+            <input name="LeanBodyMass" />
+            <input name="BodyFatWeight" />
+            <input name="DailyProtein" />
+            <input name="Blocks" />
             <textarea name="message"></textarea>
           </form>
           <form onSubmit={this.handleSubmit} data-netlify-recaptcha="true">
@@ -175,7 +179,7 @@ class Main extends React.Component {
               <textarea name="message" id="message" rows="4" placeholder="Add your allergies, food dislikes and favourite foods here" value={message} onChange={this.handleChange} ></textarea>
             </div>
             <ul className="actions">
-              <li><input type="submit" value="Submit" className="special" /></li>
+              <li><input type="submit" value="Submit" className="special" onClick={this.BodyFatCalc} /></li>
               <li><input type="reset" value="Reset" onClick={this.HandleReset} /></li>
             </ul>
           </form>
